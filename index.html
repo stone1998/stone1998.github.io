@@ -5,12 +5,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./inin.css">
-    <title>Document</title>
+    <title>Mr stone的个人微博</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            background-color: #666;
+            padding: 30px 0;
+        }
+        
+        #page {
+            width: 1100px;
+            height: 100%;
+            padding: 0 20px;
+            background-color: white;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        
+        #page>section {
+            /* background-color: red; */
+            /* border: 1px black solid; */
+            width: 100%;
+        }
+        
+        #nav h1 {
+            margin-top: 10px;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        
+        #nav>ul {
+            border-top: 1px #ccc solid;
+            border-bottom: 1px #ccc solid;
+        }
+        
+        #nav>ul>li {
+            float: left;
+            padding: 15px 5px;
+        }
+        
+        #nav>ul>li>a {
+            font-size: 20px;
+            color: #888;
+            padding: 0 10px;
+        }
+        
+        #nav>ul>li>a:hover {
+            color: #333;
+        }
+        
+        #ct {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        #ct .aside {
+            width: 30%;
+            /* border: 1px red solid; */
+        }
+        
+        #ct .main {
+            /* border: 1px red solid; */
+            width: 70%;
+        }
+        
+        #content {
+            padding: 0 10px;
+        }
+        
+        #content article {
+            border-bottom: 1px #ccc solid;
+            padding: 20px 0;
+            color: #555;
+        }
+        
+        #content article header h1 a {
+            line-height: 40px;
+            color: #21759b;
+        }
+        
+        #content article footer {
+            margin-top: 15px;
+            color: #666;
+        }
+        
+        #content article footer a {
+            color: #666;
+        }
+        
+        #aside>.form {
+            margin-top: 20px;
+            padding-left: 20px;
+            /* border: 1px red solid; */
+        }
+        
+        #aside>.form input[type="text"] {
+            padding-top: 7px;
+            padding-bottom: 5px;
+        }
+        
+        #aside>.form input[type="button"] {
+            border: none;
+            background-color: #21759b;
+            color: white;
+            padding: 7px;
+        }
+        
+        #foot {
+            padding: 20px 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h3>我的首页</h3>
-    <p></p>
+    <div id="page">
+        <section id="nav">
+            <h1>Mr stone的个人微博</h1>
+            <ul class="clearfloat">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">html+css</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">Node</a></li>
+                <li><a href="#">数据库</a></li>
+            </ul>
+        </section>
+        <section id="ct">
+            <div class="main">
+                <div id="content">
+                    <article>
+                        <header class="entry-header">
+                            <h1 class="entry-title"><a href="#" title="git时光穿梭机-版本回退" rel="bookmark">git时光穿梭机-版本回退</a></h1>
+                        </header>
+
+
+                        <div class="entry-content">在平时的工作中,经常会遇到git版本回退的问题.这里总结一下遇到的情况供需要的时候查询。 1 当你改乱了工作区某个文件的内容,想直接丢弃工作区的修改时,用命令</div>
+
+                        <footer class="entry-meta">
+                            发布于 <a href="#" title="2019-11-13" rel="bookmark"><time class="entry-date" datetime="2019-11-13">2019-11-13</time></a>。 属于 <a href="http://www.zfsphp.com/cate/4" title="查看 Linux中的全部文章" rel="category">Linux</a> 分类，被贴了
+                            <a href="#" rel="tag">Linux</a> - <a href="#" rel="tag">Git</a> 标签
+                        </footer>
+                    </article>
+                    <article>
+                        <header class="entry-header">
+                            <h1 class="entry-title"><a href="#" title="Linux输入输出重定向与管道" rel="bookmark">Linux输入输出重定向与管道</a></h1>
+                        </header>
+
+
+                        <div class="entry-content">在平时的运维工作中，会经常遇到linux重定向操作和管道符。linux重定向分为输入重定向和输出重定向。简言之，输入重定向就是将文件内容导入到命令中，而输出重定向则是将原本要输出到屏幕上的信息写入到指定的文件中。</div>
+
+                        <footer class="entry-meta">
+                            发布于 <a href="#" title="2019-10-16" rel="bookmark"><time class="entry-date" datetime="2019-10-16">2019-10-16</time></a>。 属于 <a href="http://www.zfsphp.com/cate/4" title="查看 Linux中的全部文章" rel="category">Linux</a> 分类，被贴了
+                            <a href="#" rel="tag">Linux</a> - <a href="#" rel="tag">重定向</a> - <a href="#" rel="tag">管道</a> 标签
+                        </footer>
+                    </article>
+                    <article>
+                        <header class="entry-header">
+                            <h1 class="entry-title"><a href="#" title="linux scp命令" rel="bookmark">linux scp命令</a></h1>
+                        </header>
+
+
+                        <div class="entry-content">scp是 secure copy的缩写, scp是linux系统下基于ssh登陆进行安全的远程文件拷贝命令。linux的scp命令可以在linux服务器之间复制文件和目录。</div>
+
+                        <footer class="entry-meta">
+                            发布于 <a href="#" title="2019-10-16" rel="bookmark"><time class="entry-date" datetime="2019-10-16">2019-10-16</time></a>。 属于 <a href="http://www.zfsphp.com/cate/4" title="查看 Linux中的全部文章" rel="category">Linux</a> 分类，被贴了
+                            <a href="#" rel="tag">linux</a> - <a href="#" rel="tag">scp</a> 标签
+                        </footer>
+                    </article>
+                    <article>
+                        <header class="entry-header">
+                            <h1 class="entry-title"><a href="#" title="Lara系统安装" rel="bookmark">Lara系统安装</a></h1>
+                        </header>
+
+
+                        <div class="entry-content">下载源码 在命令行输入 git clone https://github.com/zhangfangsong/Lara.git 下载源码， 国内网速慢的同学可以用码云：https://gitee.com/zfs/Lara.git
+                        </div>
+
+                        <footer class="entry-meta">
+                            发布于 <a href="#" title="2019-09-05" rel="bookmark"><time class="entry-date" datetime="2019-09-05">2019-09-05</time></a>。 属于 <a href="http://www.zfsphp.com/cate/7" title="查看 Lara博客中的全部文章" rel="category">Lara博客</a> 分类，被贴了
+                            <a href="#" rel="tag">Laravel</a> - <a href="#" rel="tag">博客</a> - <a href="http://www.zfsphp.com/tag/%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F" rel="tag">博客系统</a> 标签
+                        </footer>
+                    </article>
+                    <article>
+                        <header class="entry-header">
+                            <h1 class="entry-title"><a href="http://www.zfsphp.com/post/1" title="Lara博客系统v1.0版本发布" rel="bookmark">Lara博客系统v1.0版本发布</a></h1>
+                        </header>
+
+
+                        <div class="entry-content">Lara是一款基于Laravel框架5.5版本开发的个人博客系统，它灵活轻巧，简单易用并易于扩展，适合搭建个人博客或作为企业CMS使用。</div>
+
+                        <footer class="entry-meta">
+                            发布于 <a href="http://www.zfsphp.com/time/2019-08-22" title="2019-08-22" rel="bookmark"><time class="entry-date" datetime="2019-08-22">2019-08-22</time></a>。 属于 <a href="http://www.zfsphp.com/cate/7" title="查看 Lara博客中的全部文章" rel="category">Lara博客</a>                            分类，被贴了
+                            <a href="http://www.zfsphp.com/tag/Laravel" rel="tag">Laravel</a> - <a href="http://www.zfsphp.com/tag/%E5%8D%9A%E5%AE%A2" rel="tag">博客</a> - <a href="http://www.zfsphp.com/tag/%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F" rel="tag">博客系统</a>                            标签
+                        </footer>
+                    </article>
+                </div>
+
+            </div>
+            <div class="aside" id="aside">
+                <div class="form">
+                    <input type="text">
+                    <input type="button" value="搜索">
+                </div>
+            </div>
+        </section>
+        <section id="foot">
+            <a href="#">友情链接</a>
+        </section>
+    </div>
 </body>
 
 </html>
